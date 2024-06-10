@@ -1,54 +1,53 @@
-# Fila - Implementação em Python
+# Queue - Python Implementation
 
-Este projeto consiste em uma implementação simples de uma fila em Python. Uma fila é uma estrutura de dados que segue o princípio "primeiro a entrar, primeiro a sair" (FIFO - First In, First Out), onde o primeiro elemento adicionado é o primeiro a ser removido.
+This project consists of a simple queue implementation in Python. A queue is a data structure that follows the "First In, First Out" (FIFO) principle, where the first element added is the first one to be removed.
 
-## Funcionalidades
+## Features
 
-- **Push:** Adiciona um item ao final da fila.
-- **Pop:** Remove o primeiro item da fila, se houver algum.
-- **Top:** Retorna o primeiro item da fila, sem removê-lo.
-- **empty:** Permite verificar se a fila está vazia.
+- **Push:** Adds an item to the end of the queue.
+- **Pop:** Removes the first item from the queue, if any.
+- **Top:** Returns the first item in the queue without removing it.
+- **Empty:** Checks if the queue is empty.
 
-## Como Usar
+## How to Use
 
-1. Instancie um objeto da classe `Queue`.
-2. Adicione elementos à fila usando o método `push(item)`.
-3. Remova elementos da fila usando o método `pop()`.
-4. Consulte o primeiro elemento da fila sem removê-lo usando o método `top()`.
-5. Verifique se a fila está vazia usando o método `empty()`.
+1. Instantiate an object of the `Queue` class.
+2. Add elements to the queue using the `push(item)` method.
+3. Remove elements from the queue using the `pop()` method.
+4. Peek at the first element of the queue without removing it using the `top()` method.
+5. Check if the queue is empty using the `empty()` method.
 
-## Exemplo de Uso
+## Usage Example
 
 ```python
 queue = Queue()
 
 for i in range(100+1):
     queue.push(i)
-    print(f"Lista: {queue.list}\n")
+    print(f"List: {queue.list}\n")
     t.sleep(0.2)
 
-print(f"Lista preenchida: {queue.list}\n")
-print("Aguarde...\n")
+print(f"Filled list: {queue.list}\n")
+print("Please wait...\n")
 t.sleep(3)
 
 while not queue.empty():
     queue_first_item = queue.top()
     queue.pop()
-    print(f"Item removido da lista com sucesso: {queue_first_item}\n")
-    print(f"Lista: {queue.list}\n")
+    print(f"Item successfully removed from the list: {queue_first_item}\n")
+    print(f"List: {queue.list}\n")
     t.sleep(0.2)
 ```
-Este exemplo demonstra como preencher uma fila com números de 0 a 100, imprimir a fila, aguardar por alguns segundos e então remover cada elemento da fila e imprimir a fila resultante.
+This example demonstrates how to fill a queue with numbers from 0 to 100, print the queue, wait for a few seconds, and then remove each element from the queue while printing the resulting queue.
 
-## Requisitos de Instalação
+## Installation Requirements
 
 - Python 3.x
 
-## Autor
+## Author
 
-Este código foi desenvolvido por Ageu Felipe Nunes Moraes(eu) como parte de um projeto pessoal dedicado ao fortalecimento e amadurecimento da codificação. Para quaisquer dúvidas ou sugestões, por favor, entre em contato pelo e-mail [ageumoraes67@gmail.com].
+This code was developed by Ageu Felipe Nunes Moraes (myself) as part of a personal project dedicated to strengthening and maturing coding skills. For any questions or suggestions, please contact me at [ageumoraes67@gmail.com](mailto:ageumoraes67@gmail.com).
 
-## Aviso Legal
+## Disclaimer
 
-Este é um projeto de software desenvolvido por um indivíduo e não tem afiliação com outrem.
-
+This is a software project developed by an individual and is not affiliated with any other entity.
